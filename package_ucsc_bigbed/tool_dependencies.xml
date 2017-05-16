@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<tool_dependency>
+    <package name="ucsc_bigbed" version="340">
+        <install version="1.0">
+            <actions_group>
+                <actions os="darwin" architecture="x86_64">
+                    <action type="download_by_url"
+                            sha256sum="cda7970e67eadd1bc0183740e1d8790f8769a57872d918973e2109722b904e83">
+                        http://old-gep.wustl.edu/~wilson/packages/ucsc_bigbed/ucsc_bigbed_340_macOS_x86_64.tar.gz
+                    </action>
+                    <action type="move_directory_files">
+                        <source_directory>bin</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+
+                <actions os="linux" architecture="x86_64">
+                    <action type="download_by_url"
+                            sha256sum="0489c496bf2bdb1374a7facf0ca546f3b5fcbd7d7caf5f909c85d2fcc873c99c">
+                        http://old-gep.wustl.edu/~wilson/packages/ucsc_bigbed/ucsc_bigbed_340_linux_x86_64.tar.gz
+                    </action>
+                    <action type="move_directory_files">
+                        <source_directory>bin</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+
+                <!-- Display error message for unsupported OS and CPU architecture -->
+                <actions>
+                    <action type="shell_command">
+                        echo "ERROR: This package only supports 64-bit systems running macOS or Linux"
+                    </action>
+                    <action type="shell_command">false</action>
+                </actions>
+
+                <!-- update $PATH environment variable -->
+                <action type="set_environment">
+                    <environment_variable name="PATH" action="prepend_to">$INSTALL_DIR/bin</environment_variable>
+                </action>
+            </actions_group>
+        </install>
+        <readme>
+        <![CDATA[
+            This package contains the utilities for constructing
+            `bigBed files <https://genome.ucsc.edu/goldenpath/help/bigBed.html>`_.
+            The utilities were created by the
+            `Genome Bioinformatics Group <https://genome.ucsc.edu/staff.html>`_
+            at the UCSC Genomics Institute.
+
+            The bigBed file format is designed to store annotation features that
+            consists of one or more components. It is based on the
+            `BED <https://genome.ucsc.edu/FAQ/FAQformat.html#format1>`_ file format.
+        ]]>
+        </readme>
+    </package>
+</tool_dependency>

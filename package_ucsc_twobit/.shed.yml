@@ -1,0 +1,13 @@
+name: package_ucsc_twobit_340
+owner: yating-l
+homepage_url: http://hgdownload.soe.ucsc.edu/admin/exe/
+description: Version 340 of the UCSC twoBit tools (binaries only)
+long_description: |
+  This package contains the utilities for creating and manipulating
+  twoBit (.2bit) files. These utilities were developed by the Genome
+  Bioinformatics Group at the UCSC Genomics Institute. See the
+  twoBit Sequence Archives page at UCSC for details
+  (https://genome.ucsc.edu/goldenpath/help/twoBit.html).
+categories:
+  - Tool Dependency Packages
+type: tool_dependency_definition

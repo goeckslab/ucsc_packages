@@ -1,0 +1,52 @@
+<?xml version="1.0" ?>
+<tool_dependency>
+    <package name="ucsc_gcpercent" version="340">
+        <install version="1.0">
+            <actions_group>
+                <actions os="darwin" architecture="x86_64">
+                    <action type="download_by_url"
+                            sha256sum="e74387b8ca9d9acac30b2fac278d7bebd38b568575ed4413f491002cd0747cae">
+                        http://old-gep.wustl.edu/~wilson/packages/ucsc_gcpercent/ucsc_gcpercent_340_macOS_x86_64.tar.gz
+                    </action>
+                    <action type="move_directory_files">
+                        <source_directory>bin</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+
+                <actions os="linux" architecture="x86_64">
+                    <action type="download_by_url"
+                            sha256sum="e44479e413082b940e6cd2b89fbe5e461a4a422ded4c75bdc3afe938dd952acc">
+                        http://old-gep.wustl.edu/~wilson/packages/ucsc_gcpercent/ucsc_gcpercent_340_linux_x86_64.tar.gz
+                    </action>
+                    <action type="move_directory_files">
+                        <source_directory>bin</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+
+                <!-- Display error message for unsupported OS and CPU architecture -->
+                <actions>
+                    <action type="shell_command">
+                        echo "ERROR: This package only supports 64-bit systems running macOS or Linux"
+                    </action>
+                    <action type="shell_command">false</action>
+                </actions>
+
+                <!-- update $PATH environment variable -->
+                <action type="set_environment">
+                    <environment_variable name="PATH" action="prepend_to">$INSTALL_DIR/bin</environment_variable>
+                </action>
+            </actions_group>
+        </install>
+        <readme>
+        <![CDATA[
+            This package contains the hgGcPercent tool for constructing the
+            `GC percent <http://genomewiki.ucsc.edu/index.php/Browser_Track_Construction#GC_Percent>`_
+            evidence track. This tool was created by the
+            `Genome Bioinformatics Group <https://genome.ucsc.edu/staff.html>`_
+            at the UCSC Genomics Institute.
+        ]]>
+        </readme>
+    </package>
+</tool_dependency>

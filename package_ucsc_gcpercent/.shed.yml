@@ -1,0 +1,11 @@
+name: package_ucsc_gcpercent_340
+owner: yating-l
+homepage_url: http://hgdownload.soe.ucsc.edu/admin/exe/
+description: Version 340 of the UCSC hgGcPercent tool (binary only)
+long_description: |
+  This package contains the hgGcPercent tool for constructing the
+  GC percent evidence track. This tool was created by the Genome
+  Bioinformatics Group at the UCSC Genomics Institute.
+categories:
+  - Tool Dependency Packages
+type: tool_dependency_definition

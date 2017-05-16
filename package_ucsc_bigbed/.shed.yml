@@ -1,0 +1,12 @@
+name: package_ucsc_bigbed_340
+owner: yating-l
+homepage_url: http://hgdownload.soe.ucsc.edu/admin/exe/
+description: Version 340 of the UCSC bigBed tools (binaries only)
+long_description: |
+  This package contains the utilities for constructing
+  bigBed files (https://genome.ucsc.edu/goldenpath/help/bigBed.html).
+  These utilities were created by the Genome Bioinformatics Group at
+  the UCSC Genomics Institute.
+categories:
+  - Tool Dependency Packages
+type: tool_dependency_definition

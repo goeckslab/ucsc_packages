@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<tool_dependency>
+    <package name="ucsc_twobit" version="340">
+        <install version="1.0">
+            <actions_group>
+                <actions os="darwin" architecture="x86_64">
+                    <action type="download_by_url"
+                            sha256sum="aa0df6fc9c5dfe83cb94456e1100a5ecd7a247e7521d91f4e91c46c1b21fc9ab">
+                        http://old-gep.wustl.edu/~wilson/packages/ucsc_twobit/ucsc_twobit_340_macOS_x86_64.tar.gz
+                    </action>
+                    <action type="move_directory_files">
+                        <source_directory>bin</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+
+                <actions os="linux" architecture="x86_64">
+                    <action type="download_by_url"
+                            sha256sum="31b18fd6f0f24981815ded0a1790be49ca47a5d2cce40c3af29ffc6f5bea4922">
+                        http://old-gep.wustl.edu/~wilson/packages/ucsc_twobit/ucsc_twobit_340_linux_x86_64.tar.gz
+                    </action>
+                    <action type="move_directory_files">
+                        <source_directory>bin</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+
+                <!-- Display error message for unsupported OS and CPU architecture -->
+                <actions>
+                    <action type="shell_command">
+                        echo "ERROR: This package only supports 64-bit systems running macOS or Linux"
+                    </action>
+                    <action type="shell_command">false</action>
+                </actions>
+
+                <!-- update $PATH environment variable -->
+                <action type="set_environment">
+                    <environment_variable name="PATH" action="prepend_to">$INSTALL_DIR/bin</environment_variable>
+                </action>
+            </actions_group>
+        </install>
+        <readme>
+        <![CDATA[
+            This package contains the utilities for constructing and manipulating
+            `twoBit files <https://genome.ucsc.edu/goldenpath/help/twoBit.html>`_.
+            The utilities were created by the
+            `Genome Bioinformatics Group <https://genome.ucsc.edu/staff.html>`_
+            at the UCSC Genomics Institute.
+
+            The twoBit file format is designed to store genomic sequences and the
+            associated repeat masking information. The twoBit file is used by the
+            UCSC Genome Browser and by tools such as
+            `BLAT <https://genome.ucsc.edu/goldenpath/help/blatSpec.html>`_.
+        ]]>
+        </readme>
+    </package>
+</tool_dependency>
