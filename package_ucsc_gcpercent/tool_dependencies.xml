@@ -5,8 +5,8 @@
             <actions_group>
                 <actions os="darwin" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="e74387b8ca9d9acac30b2fac278d7bebd38b568575ed4413f491002cd0747cae">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_gcpercent/ucsc_gcpercent_340_macOS_x86_64.tar.gz
+                            sha256sum="cae28b13a853e740260199190f0d5f8081d98f3e5d50ac1438ad2a75b241e8ce">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_gcpercent_340_macOS_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>
@@ -16,8 +16,8 @@
 
                 <actions os="linux" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="e44479e413082b940e6cd2b89fbe5e461a4a422ded4c75bdc3afe938dd952acc">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_gcpercent/ucsc_gcpercent_340_linux_x86_64.tar.gz
+                            sha256sum="bc54f5587e6ace2373aed120ec94c00729a8ce14f6c0c548a131e23631f4f795">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_gcpercent_340_linux_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>

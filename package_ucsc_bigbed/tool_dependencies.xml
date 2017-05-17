@@ -5,8 +5,8 @@
             <actions_group>
                 <actions os="darwin" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="cda7970e67eadd1bc0183740e1d8790f8769a57872d918973e2109722b904e83">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_bigbed/ucsc_bigbed_340_macOS_x86_64.tar.gz
+                            sha256sum="02596b55cec0b4728e67173b7cd967819638c3be1674ef941950076c14fe3153">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_bigbed_340_macOS_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>
@@ -16,8 +16,8 @@
 
                 <actions os="linux" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="0489c496bf2bdb1374a7facf0ca546f3b5fcbd7d7caf5f909c85d2fcc873c99c">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_bigbed/ucsc_bigbed_340_linux_x86_64.tar.gz
+                            sha256sum="774daa14c87da81e69a9cbb46925d19882a7341e9fcb17a7ee4aac0004b4a6d3">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_bigbed_340_linux_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>

@@ -5,8 +5,8 @@
             <actions_group>
                 <actions os="darwin" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="aa0df6fc9c5dfe83cb94456e1100a5ecd7a247e7521d91f4e91c46c1b21fc9ab">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_twobit/ucsc_twobit_340_macOS_x86_64.tar.gz
+                            sha256sum="802a44835422045178bf6257254a822639fb6eb6947e9afc8de9aad0a8a62d0e">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_twobit_340_macOS_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>
@@ -16,8 +16,8 @@
 
                 <actions os="linux" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="31b18fd6f0f24981815ded0a1790be49ca47a5d2cce40c3af29ffc6f5bea4922">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_twobit/ucsc_twobit_340_linux_x86_64.tar.gz
+                            sha256sum="cd923a2993eebba7cbaa01a7283c60b4839f5edee232227645fb7d47b1380b0a">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_twobit_340_linux_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>

@@ -5,8 +5,8 @@
             <actions_group>
                 <actions os="darwin" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="a34c57a9fb3c36a984b8fa879a99697c994cd981a1277663d372638e4dec8bb2">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_bigwig/ucsc_bigwig_340_macOS_x86_64.tar.gz
+                            sha256sum="218461b90b8b4aa1e116c40fd94027fe2d24be80a1c77480c942fedac818bc4e">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_bigwig_340_macOS_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>
@@ -16,8 +16,8 @@
 
                 <actions os="linux" architecture="x86_64">
                     <action type="download_by_url"
-                            sha256sum="0d2bd886e312980e0ae58ae912315beeeac612fd1783c959b4eabd62cffd8512">
-                        http://old-gep.wustl.edu/~wilson/packages/ucsc_bigwig/ucsc_bigwig_340_linux_x86_64.tar.gz
+                            sha256sum="0c996b3f156fc361f852038c564887e33af89d21413ffe932afd7bcbd11de2d6">
+                        http://old-gep.wustl.edu/~galaxy/packages/ucsc_bigwig_340_linux_x86_64.tar.gz
                     </action>
                     <action type="move_directory_files">
                         <source_directory>bin</source_directory>
