@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<tool_dependency>
+    <package name="ucsc_hac" version="340">
+        <install version="1.0">
+            <actions_group>
+                <actions architecture="x86_64" os="darwin">
+                    <action type="download_by_url" sha256sum="c18fcb8ed0468dff74c6392b929be532aab777db1c2a8d1d9d83f94f585602d5">http://old-gep.wustl.edu/~galaxy/ucsc_hac_340_macOS_x86_64.tar.gz</action>
+                    <action type="move_directory_files">
+                        <source_directory>.</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+                <actions architecture="x86_64" os="linux">
+                    <action type="download_by_url" sha256sum="13ad4c6bdc0ed669446dea0cc7ab3db0877ea844665485ea93c3f16c96e408a4">http://old-gep.wustl.edu/~galaxy/ucsc_hac_340_linux_x86_64.tar.gz</action>
+                    <action type="move_directory_files">
+                        <source_directory>.</source_directory>
+                        <destination_directory>$INSTALL_DIR/bin</destination_directory>
+                    </action>
+                </actions>
+                <action type="set_environment">
+                    <environment_variable name="PATH" action="prepend_to">$INSTALL_DIR/bin</environment_variable>
+                </action>
+            </actions_group>
+         </install>
+         <readme>The well known UCSC tools from Jim Kent. This subset of UCSC tools are used for HubArchiveCreator, including 
+         - bedGraphToBigWig
+         - bedToBigBed
+         - gff3ToGenePred
+         - gtfToGenePred
+         - genePredToBed
+         - genePredToBigGenePred
+         - faToTwoBit
+         - pslToBigPsl
+         - twoBitInfo
+         </readme>
+    </package>
+</tool_dependency>

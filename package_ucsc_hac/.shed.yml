@@ -1,0 +1,8 @@
+name: package_ucsc_hac_340
+owner: yating-l
+homepage_url: http://hgdownload.soe.ucsc.edu/admin/exe/
+description: Version 340 of the UCSC tools for HubArchiveCreator(binaries only)
+long_description: The well known UCSC tools from Jim Kent. This subset of UCSC tools are used for HubArchiveCreator, including bedGraphToBigWig, bedToBigBed, gff3ToGenePred, gtfToGenePred, genePredToBed, genePredToBigGenePred, faToTwoBit, pslToBigPsl
+categories:
+  - Tool Dependency Packages
+type: tool_dependency_definition
