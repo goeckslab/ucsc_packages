@@ -4,14 +4,14 @@
         <install version="1.0">
             <actions_group>
                 <actions architecture="x86_64" os="darwin">
-                    <action type="download_by_url" sha256sum="c18fcb8ed0468dff74c6392b929be532aab777db1c2a8d1d9d83f94f585602d5">http://old-gep.wustl.edu/~galaxy/packages/ucsc_hac_340_macOS_x86_64.tar.gz</action>
+                    <action type="download_by_url" sha256sum="3793f8a762e41905374cad2fca44f9547eacd81eccad53908f229fa2fcda294b">http://old-gep.wustl.edu/~galaxy/packages/ucsc_hac_340_macOS_x86_64.tar.gz</action>
                     <action type="move_directory_files">
                         <source_directory>.</source_directory>
                         <destination_directory>$INSTALL_DIR/bin</destination_directory>
                     </action>
                 </actions>
                 <actions architecture="x86_64" os="linux">
-                    <action type="download_by_url" sha256sum="13ad4c6bdc0ed669446dea0cc7ab3db0877ea844665485ea93c3f16c96e408a4">http://old-gep.wustl.edu/~galaxy/packages/ucsc_hac_340_linux_x86_64.tar.gz</action>
+                    <action type="download_by_url" sha256sum="dba14232e2a404c0b83542529c98a60affbd7b672f6c8ae58384610c0b88e3b4">http://old-gep.wustl.edu/~galaxy/packages/ucsc_hac_340_linux_x86_64.tar.gz</action>
                     <action type="move_directory_files">
                         <source_directory>.</source_directory>
                         <destination_directory>$INSTALL_DIR/bin</destination_directory>
@@ -32,6 +32,8 @@
          - faToTwoBit
          - pslToBigPsl
          - twoBitInfo
+         - pslCheck
+         - validateFiles
          </readme>
     </package>
 </tool_dependency>
