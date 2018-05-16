@@ -1,0 +1,8 @@
+name: package_ucsc_blat_340
+owner: yating-l
+homepage_url: http://hgdownload.soe.ucsc.edu/admin/exe/
+description: Version 340 of the UCSC tools for BLAT search(binaries only)
+long_description: The well known UCSC tools from Jim Kent. This subset of UCSC tools are used to do BLAT search.  
+categories:
+  - Tool Dependency Packages
+type: tool_dependency_definition
